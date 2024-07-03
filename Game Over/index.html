@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Over</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="loader d-none" id="loader"></div>
+    <section class="games">
+      <header>
+        <img src="./images/wraper.png" class="w-100" alt="cover image" />
+      </header>
+      <nav
+        class="navbar navbar-expand-lg position-sticky top-0 z-3 mx-auto w-75 rounded-4"
+      >
+        <div class="container-fluid">
+          <h5 class="navbar-brand mb-0 text-uppercase">
+            <img
+              src="./images/logo-sm.png"
+              class="img-fluid"
+              alt="Logo image"
+            />
+            Game Reviews
+          </h5>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >MMORPG</a
+                >
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Shooter</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Sailing</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Permadeath</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Superhero</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Pixel</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section id="GameDetails" class="d-none">
+      <div class="container py-5">
+        <div class="d-flex justify-content-between pb-4">
+          <h2 class="text-white">Details Game</h2>
+          <button id="bClose" class="btn btn-outline-danger">
+            <i class="fa-solid fa-x px-2"></i>
+          </button>
+        </div>
+        <div id="Details" class="row gy-3"></div>
+      </div>
+    </section>
+    <section id="mainSec" class="home py-5">
+      <div class="container">
+        <div class="row" id="games"></div>
+      </div>
+    </section>
+    <!-- Adding type="module" to script tags -->
+    <script type="module" src="js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

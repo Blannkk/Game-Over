@@ -1,0 +1,108 @@
+:root {
+    --main-color: #272b30;
+    --color-text: #fff;
+    --second-color: #3a497b;
+    --second-color-rgba: 255, 255, 255;
+
+}
+
+body {
+    font-family: "Comfortaa", cursive;
+    min-height: 100%;
+    min-width: 100%;
+    color: var(--color-text);
+    background: var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Nerko One", cursive;
+    color: var(--color-text) !important;
+}
+
+.navbar {
+    background-color: var(--second-color);
+    color: ar(--color-text);
+}
+
+nav {
+
+    color: var(--color-text);
+}
+
+.navbar-brand {
+    color: var(--color-text);
+}
+
+.navbar-brand img {
+    max-width: 2.5rem;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+    color: var(--color-text);
+}
+
+.nav-link {
+    color: var(--color-text);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: rgb(6, 145, 196);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: rgb(6, 145, 196);
+}
+
+header img {
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+
+.home .card {
+    width: 18rem;
+    background-color: var(--main-color);
+
+}
+
+.home .card {
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+}
+
+.home .card:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+
+.loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #3498db;
+    width: gtpx;
+    height: gtpx;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
